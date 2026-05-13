@@ -71,3 +71,6 @@ This section contains communication and supervision integration:
 
 ## Reports
 The laboratory reports included in this repository are written in Portuguese.
+
+## Video Demonstration
+https://www.youtube.com/watch?v=edk7Aj8i9cU
