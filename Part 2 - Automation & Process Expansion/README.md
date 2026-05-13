@@ -23,7 +23,7 @@ This stage restructures and extends the PLC program to support new process requi
 
 ## Technologies Used
 - Siemens TIA Portal
-- PLC Programming (LADDER)
+- PLC Programming (LADDER and SCL)
 - Modular OB/FB/FC/DB architecture
 
 ## Role Within the Complete System
