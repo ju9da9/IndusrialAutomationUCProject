@@ -1,18 +1,24 @@
 # Printed Codes (Part 3)
 
-## Purpose
-This folder contains exported code printouts for the communication and integration phase of the project.
+## Subproject Purpose
+This folder provides printed PLC code artifacts for the communication and integration stage.
 
-## Technical Description
-The files represent PLC program snapshots associated with communication-oriented implementation contexts. They support technical review of how control logic is structured for integration scenarios.
+## Technical Summary
+The files document the code contexts used for S7-1200 and S7-1500 in the communication architecture implemented in Part 3.
 
-## File Description
-- **`Codes_1200.pdf`** – Printed PLC code artifact associated with S7-1200 context.
-- **`Main1500.pdf`** – Main PLC code artifact associated with S7-1500 context.
+## Main Functions Implemented
+- `Codes_1200.pdf` – S7-1200 code used in integrated communication/supervision logic
+- `Main1500.pdf` – S7-1500 main code used for master-side communication and coordination
 
-## Technologies and Tools Used
-- Siemens TIA Portal code export and documentation workflow
-- PDF artifacts for engineering review
+## Relevant PLC Logic
+- PLC data exchange preparation for supervisory systems
+- Communication-focused control mapping between PLC contexts
 
-## Role in Overall System Architecture
-These artifacts provide evidence of the **communication/integration implementation layer**, linking PLC execution environments to interoperable IIoT and cloud data-flow objectives.
+## Technologies Used
+- Siemens TIA Portal PDF exports
+- Siemens S7-1200
+- Siemens S7-1500
+- PROFIBUS-DP
+
+## Role Within the Complete System
+These files are evidence of the implemented PLC communication layer that supports HMI, SCADA, and integration functions in Part 3.

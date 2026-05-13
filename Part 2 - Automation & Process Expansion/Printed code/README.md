@@ -1,26 +1,27 @@
 # Printed Code (Part 2)
 
-## Purpose
-This folder captures exported PLC block printouts for the process expansion phase implemented in Part 2.
+## Subproject Purpose
+This folder documents the PLC implementation used in the Part 2 automation expansion stage.
 
-## Technical Description
-The documents represent modularized control logic, supporting functions, and data structures for an expanded automation scope. They provide traceable engineering evidence of the implemented function blocks and function calls.
+## Technical Summary
+It contains PDF exports of the control, transfer, packaging, labeling, and data-management blocks added or updated in this phase.
 
-## File Description
-- **`Control_TD(FB2).pdf`** – Function Block for TD control sequence.
-- **`Control_TE(FB3).pdf`** – Function Block for TE control sequence.
-- **`Control_YZ(FB6).pdf`** – Function Block for YZ control sequence.
-- **`Criar_Dados (FC2).pdf`** – Function for data creation/initialization.
-- **`Dados(DB2).pdf`** – Data Block used for process data storage.
-- **`FB_Embalamento(FB4).pdf`** – Function Block for packaging-related automation logic.
-- **`FB_Etiquetagem(FB5).pdf`** – Function Block for labeling-related automation logic.
-- **`FB_Transferencia(FB1).pdf`** – Function Block for transfer process control.
-- **`Main (OB1).pdf`** – Main organizational block orchestrating cyclic execution.
-- **`Transfer_dados(FC1).pdf`** – Function for data transfer operations.
+## Main Functions Implemented
+- `Main (OB1).pdf` – cyclic execution coordination
+- `FB_Transferencia(FB1).pdf` – transfer sequence block
+- `Control_TD(FB2).pdf`, `Control_TE(FB3).pdf`, `Control_YZ(FB6).pdf` – routing-zone control
+- `Transfer_dados(FC1).pdf`, `Criar_Dados (FC2).pdf` – data transfer and data generation
+- `FB_Embalamento(FB4).pdf`, `FB_Etiquetagem(FB5).pdf` – packaging and labeling
+- `Dados(DB2).pdf` – data structure and process status storage
 
-## Technologies and Tools Used
-- Siemens TIA Portal code export workflow
-- PLC program documentation in PDF format
+## Relevant PLC Logic
+- Transfer authorization and routing coordination
+- Process execution for packaging and labeling
+- Data consistency during movement between conveyor arrays
 
-## Role in Overall System Architecture
-These artifacts record the **expanded control and process automation layer**, which bridges foundational PLC logic and higher-level integration activities.
+## Technologies Used
+- Siemens TIA Portal PDF exports
+- PLC Programming (LADDER)
+
+## Role Within the Complete System
+These printed files are the technical reference for the Part 2 logic that extends the initial control system with full process automation features.

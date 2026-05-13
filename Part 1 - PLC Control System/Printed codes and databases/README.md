@@ -1,21 +1,25 @@
 # Printed Codes and Databases (Part 1)
 
-## Purpose
-This folder contains exported PLC program printouts that document the baseline control logic and data model developed in Part 1.
+## Subproject Purpose
+This folder provides the printed PLC code and data definitions used to document the Part 1 control baseline.
 
-## Technical Description
-The files provide static engineering snapshots of organizational blocks, function blocks, data blocks, and tag definitions. They are suitable for review, verification, and documentation of the implemented PLC design.
+## Technical Summary
+The files are PDF exports of the main PLC blocks and database structures used for conveyor transfer and box tracking.
 
-## File Description
-- **`Dados (DB2).pdf`** – Data Block 2 definition used for process data/state storage.
-- **`FB_Transferencia (FB1).pdf`** – Function Block 1 for transfer process logic.
-- **`Main[OB1].pdf`** – Main cyclic organizational block coordinating execution.
-- **`PLC tags.pdf`** – PLC tag table documenting mapped variables and signals.
-- **`Transferencia_DB (DB1).pdf`** – Data Block 1 associated with transfer logic.
+## Main Functions Implemented
+- Main cyclic execution (`Main[OB1].pdf`)
+- Transfer function block (`FB_Transferencia (FB1).pdf`)
+- Transfer and process data blocks (`Transferencia_DB (DB1).pdf`, `Dados (DB2).pdf`)
+- PLC variable mapping (`PLC tags.pdf`)
 
-## Technologies and Tools Used
-- Siemens TIA Portal export functions
-- PLC block printout documentation in PDF format
+## Relevant PLC Logic
+- Transfer sequence state handling
+- Data persistence for conveyor/box status
+- Tag-level interface between physical I/O and control logic
 
-## Role in Overall System Architecture
-These artifacts document the **control-layer implementation baseline** that supports downstream automation expansion and integration phases.
+## Technologies Used
+- Siemens TIA Portal PDF exports
+- PLC Programming (LADDER)
+
+## Role Within the Complete System
+These files are the reference documentation for the Part 1 implementation that supports all later project stages.

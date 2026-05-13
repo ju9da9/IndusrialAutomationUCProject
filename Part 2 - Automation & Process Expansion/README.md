@@ -1,23 +1,30 @@
 # Part 2 - Automation & Process Expansion
 
-## Purpose
-This subproject extends the initial PLC control system with additional automation modules and process functions, increasing system capability beyond the Part 1 baseline.
+## Subproject Purpose
+Part 2 expands the base conveyor system with routing automation, data-handling functions, and dedicated packaging/labeling logic.
 
-## Technical Description
-Part 2 introduces a broader set of PLC functions to support expanded operations, including transfer continuation, data handling, and dedicated process control modules. The included printed blocks indicate modular logic decomposition through FB and FC components, coordinated from the main OB.
+## Technical Summary
+This stage restructures and extends the PLC program to support new process requirements, including improved transfer handling and control of routing zones.
 
-## Contents
-- **`Printed code/`**  
-  PDF exports of expanded PLC logic blocks and data-related functions.
-- **`Report_Part2.pdf`**  
-  Technical report describing the expansion stage and implementation outcomes.
-- **`TIA Portal Developed Program.zip`**  
-  TIA Portal project archive containing the Part 2 implementation.
+## Main Functions Implemented
+- Data creation function (`Criar_Dados / FC2`)
+- Data transfer function (`Transfer_dados / FC1`)
+- Routing-zone control functions (`Control_TD / FB2`, `Control_TE / FB3`, `Control_YZ / FB6`)
+- Packaging function block (`FB_Embalamento / FB4`)
+- Labeling function block (`FB_Etiquetagem / FB5`)
+- Updated transfer function integration (`FB_Transferencia / FB1`)
 
-## Technologies and Tools Used
-- Siemens PLC programming (modular FB/FC/DB structure)
-- TIA Portal development and project packaging
-- PDF engineering exports for validation and review
+## Relevant PLC Logic
+- Automatic routing priorities for transfers
+- Interlocking of transfers through routing conveyors
+- Packaging process timing and process flag update
+- Labeling process conditions based on box type
+- Array-based movement of box records between conveyors
 
-## Role in Overall System Architecture
-Part 2 provides the **process expansion layer**, adding richer automation behavior and modular control functions that prepare the system for communication and IIoT integration in Part 3.
+## Technologies Used
+- Siemens TIA Portal
+- PLC Programming (LADDER)
+- Modular OB/FB/FC/DB architecture
+
+## Role Within the Complete System
+Part 2 provides the process automation layer that prepares the system for communication, HMI, SCADA, and database integration in Part 3.

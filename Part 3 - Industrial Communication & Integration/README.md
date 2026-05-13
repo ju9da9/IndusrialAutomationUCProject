@@ -1,23 +1,36 @@
 # Part 3 - Industrial Communication & Integration
 
-## Purpose
-This subproject focuses on industrial communication and integration aspects of the automation solution, preparing PLC-controlled operations for interoperable data exchange and IIoT/cloud connectivity workflows.
+## Subproject Purpose
+Part 3 integrates industrial communication and supervision layers on top of the automated conveyor, packaging, and labeling process.
 
-## Technical Description
-Part 3 documents communication-oriented PLC programming artifacts that support integration between automation assets and upper-layer systems. This stage aligns control data with interfaces used by supervisory and digital platforms.
+## Technical Summary
+This stage implements PLC-to-PLC communication, remote I/O exchange, local and external HMI supervision, database registration, and web-based visualization.
 
-## Contents
-- **`Printed codes/`**  
-  PDF exports of communication/integration-related PLC code artifacts.
-- **`Report_Part3.pdf`**  
-  Technical report for the communication and integration stage.
-- **`TIA Portal Developed Program.zip`**  
-  TIA Portal archive for the implemented communication-focused project version.
+## Main Functions Implemented
+- PROFIBUS-DP communication between Siemens S7-1500 (master), S7-1200, and ET200L
+- KTP600 HMI implementation with WinCC in TIA Portal
+- External HMI integration in Citect SCADA via Modbus TCP and `MB_SERVER`
+- MySQL registration using `MySQLBridgeClient`
+- Siemens web server pages for process monitoring
 
-## Technologies and Tools Used
-- Siemens PLC and TIA Portal engineering
-- Industrial communication integration concepts
-- Exported PDF documentation for code review and traceability
+## Relevant PLC Logic
+- Data mapping between S7-1500 and S7-1200 through configured communication addresses
+- ET200L signal exchange for remote sensing/actuation
+- PLC memory preparation for SCADA variable publishing
+- SQL command transfer from PLC application to MySQL server
 
-## Role in Overall System Architecture
-Part 3 implements the **integration layer** between PLC control and digital/IIoT ecosystems, enabling data pathways required for cloud-connected industrial monitoring and analytics.
+## Technologies Used
+- Siemens TIA Portal
+- Siemens S7-1200
+- Siemens S7-1500
+- ET200L
+- PROFIBUS-DP
+- WinCC
+- KTP600
+- Citect SCADA
+- Modbus TCP
+- MySQL Workbench 8.0
+- Siemens Web Server
+
+## Role Within the Complete System
+Part 3 adds communication, supervision, and information-system integration to complete the full academic automation solution.
