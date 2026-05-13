@@ -1,7 +1,7 @@
 # Industrial Automation Conveyor System
 
 ## Project Description
-This repository contains an academic industrial automation project developed in the **Automação Industrial 2** course at the **Instituto Politécnico de Leiria**.
+This repository contains an academic industrial automation project developed in the **Automação Industrial 2** curricular unit, from Baschelor's degree in Electrical and Computer Engineering at the **Polytechnic Institute of Leiria, Portugal**.
 
 The complete system includes:
 - Conveyor belt control using PLCs
