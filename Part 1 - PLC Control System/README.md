@@ -1,28 +1,28 @@
 # Part 1 - PLC Control System
 
-## Purpose
-This subproject delivers the foundational PLC control layer of the automation system. It defines the base process logic, data blocks, and execution structure used as the starting point for subsequent expansion and integration phases.
+## Subproject Purpose
+Part 1 implements the core PLC control logic for box transfer between conveyors and establishes the project data model.
 
-## Technical Description
-Part 1 focuses on deterministic machine/process behavior implemented in Siemens PLC logic. The exported blocks show the use of:
-- **Main cycle orchestration** through OB1
-- **Function blocks (FB)** for transfer-oriented process control
-- **Data blocks (DB)** for state and parameter persistence
-- **PLC tag mapping** for I/O and internal signal organization
+## Technical Summary
+This stage defines the baseline control behavior using TIA Portal, including sensor/actuator coordination, transfer sequencing, and persistent data organization.
 
-## Contents
-- **`Printed codes and databases/`**  
-  PDF exports of key PLC program blocks and data definitions.
-- **`Report_Part1.pdf`**  
-  Formal project documentation for this development stage.
-- **`TIA Portal Developed Program.zip`**  
-  TIA Portal project archive for the implemented PLC control solution.
+## Main Functions Implemented
+- `FB_Transferencia (FB1)` for conveyor transfer sequence execution
+- `OB1` for cyclic program orchestration
+- Data blocks for transfer state and process data (`DB1`, `DB2`)
+- PLC tag mapping for I/O and internal variables
 
-## Technologies and Tools Used
-- Siemens PLC programming environment
-- TIA Portal engineering workflow
-- IEC 61131-3 style program organization (OB/FB/DB)
-- PDF block printouts for design traceability
+## Relevant PLC Logic
+- GRAFCET-based transfer sequence
+- Transfer between adjacent conveyors
+- Position-sensor-driven transitions
+- Direction and barrier control in transfer steps
+- Box data structure tracking (serial/RFID/type/process flags/occupied cell)
 
-## Role in Overall System Architecture
-Part 1 implements the **core control foundation**. It is the control baseline upon which Part 2 process expansion and Part 3 communication/integration capabilities are built.
+## Technologies Used
+- Siemens TIA Portal
+- PLC Programming (LADDER)
+- Siemens PLC platform
+
+## Role Within the Complete System
+Part 1 is the control foundation used by the expansion functions in Part 2 and the communication/supervision integrations in Part 3.
